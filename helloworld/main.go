@@ -1,4 +1,4 @@
-// Command line argument in go
+// Simple Hello World program
 package main
 
 import (
