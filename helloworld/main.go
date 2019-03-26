@@ -1,4 +1,7 @@
 // Simple Hello World program
+// inline comments
+/* Multi line
+   comments */
 package main
 
 import (
