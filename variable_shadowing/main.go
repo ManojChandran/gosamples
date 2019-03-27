@@ -11,4 +11,10 @@ func main() {
   // took precedence
   var name string = "chandran"
   fmt.Println("name :", name)
+  // Convert variable type
+  var i int = 42
+  fmt.Printf("%v, %T\n",i, i)
+  var j string
+  j = string(i)
+  fmt.Printf("%v, %T\n",j, j)
 }
