@@ -1,4 +1,5 @@
 // go composition using stuct
+// embedding in struct
 package main
 
 import (
