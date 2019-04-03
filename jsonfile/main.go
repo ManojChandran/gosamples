@@ -8,19 +8,19 @@ import (
 )
 
 type Query struct {
-  TableName string `json:"TableName"`
+  TableName string `json:TableName`
   AttributeDefinition [] struct {
-    AttributeName string `jason:"AttributeDefinition"`
-    AttributeType string `json:"AttributeType"`
-  }`json:"AttributeDefinition"`
+    AttributeName string `jason:AttributeDefinition`
+    AttributeType string `json:AttributeType`
+  }`json:AttributeDefinition`
   KeySchema [] struct {
-    AttributeName string `json:"AttributeName"`
-    KeyType string `json:"KeyType"`
-  }`json:"KeySchema"`
+    AttributeName string `json:AttributeName`
+    KeyType string `json:KeyType`
+  }`json:KeySchema`
   ProvisionedThroughput struct {
-    ReadCapacityUnits int `json:"ReadCapacityUnits"`
-    WriteCapacityUnits int `json:"WriteCapacityUnits"`
-  }`json:"ProvisionedThroughput"`
+    ReadCapacityUnits int `json:ReadCapacityUnits`
+    WriteCapacityUnits int `json:WriteCapacityUnits`
+  }`json:ProvisionedThroughput`
 } // Query
 
 func loadQuery(filename string) (Query, error)  {
