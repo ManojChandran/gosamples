@@ -11,6 +11,8 @@ import (
 
 func main() {
   fmt.Println("end")
+  // defer will happen prior to panic
+  defer fmt.Println("this was defered")
   panic("something bad happened")
   fmt.Println("end")
 }
