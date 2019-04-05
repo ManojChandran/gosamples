@@ -1,5 +1,6 @@
-# gosamples
+# go examples
 
+Repository for basic go example programs.
 
 # GO HELP
 

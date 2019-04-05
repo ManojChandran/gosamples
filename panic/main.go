@@ -11,8 +11,11 @@ import (
 
 func main() {
   fmt.Println("end")
-  // defer will happen prior to panic
+  // defer needs to be coded before the panic
+  // this is to make sure the defer function is
+  // registered before actual panic happens
   defer fmt.Println("this was defered")
   panic("something bad happened")
+  defer fmt.Println("this was not defered")
   fmt.Println("end")
 }
