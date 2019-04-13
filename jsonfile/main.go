@@ -37,6 +37,11 @@ func loadQuery(filename string) (Query, error)  {
 
 func main() {
   query,_ := loadQuery("Query.json")
-  fmt.Println(query.AttributeDefinition[0].AttributeName)
-  fmt.Println(query.KeySchema[1].AttributeName)
+
+  for _,v := range query.AttributeDefinition{
+    fmt.Println(v.AttributeName)
+  }
+  for _,v := range query.KeySchema{
+    fmt.Println(v.AttributeName)
+  }
 }
