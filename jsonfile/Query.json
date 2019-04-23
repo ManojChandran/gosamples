@@ -1,5 +1,4 @@
 {
-  "TableName" : "Movies",
   "AttributeDefinition": [{
       "AttributeName": "year",
       "AttributeType": "N"
