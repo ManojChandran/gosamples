@@ -6,11 +6,18 @@ import (
 )
 
 func main() {
-  grades := [...]int{97,85,93}
-  fmt.Println(grades)
-  fmt.Println(len(grades))
+  // Declare an integer array of five elements.
+  var array [5] int
+  fmt.Println(array)
+
+  // declaring an array initializing specific elements
   names := [3]string{"Manoj", "Archana", "Amaya"}
   fmt.Println(names)
+
+  // Declaring an array with Go calculating size
+  grades := [...]int{97,85,93}
+  fmt.Println(grades, "len :", len(grades))
+
   // array's are considered as values, not like
   // other language when you create an Array
   // its getting pointing to that
