@@ -2,22 +2,22 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
 )
 
 func main() {
-  var w Writer = ConsoleWriter{}
-  w.Write([]byte("Hello World"))
+	var w Writer = ConsoleWriter{}
+	w.Write([]byte("Hello World"))
 }
 
 type Writer interface {
-  // interface describes behaviour
-  Write([]byte) (int, error)
+	// interface describes behaviour
+	Write([]byte) (int, error)
 }
 
 type ConsoleWriter struct{}
 
-func (cw ConsoleWriter) Write(data []byte)(int, error){
-  n, err := fmt.Println(string(data))
-  return n, err
+func (cw ConsoleWriter) Write(data []byte) (int, error) {
+	n, err := fmt.Println(string(data))
+	return n, err
 }
