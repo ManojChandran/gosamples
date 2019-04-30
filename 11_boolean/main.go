@@ -11,6 +11,10 @@ func main() {
   fmt.Println(istrueornot)
   someBool := 5 < 3
   fmt.Println(someBool)
-  isequal := 5 == 4
-  fmt.Println(isequal)
+  inttobool := inttobool(5)
+  fmt.Println(inttobool)
+}
+
+func inttobool(i int ) bool {
+  return i !=0
 }
