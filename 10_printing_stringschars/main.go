@@ -1,5 +1,5 @@
-// Stings and chars
-// every type in go has a default value\
+// stings and chars
+// every type in go has a default value
 // single line chars ""
 // Multiline ``
 // rune ''

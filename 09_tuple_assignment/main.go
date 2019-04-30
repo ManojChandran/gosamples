@@ -1,7 +1,3 @@
-// Simple Hello World program
-// inline comments
-/* Multi line
-   comments */
 package main
 
 import (
@@ -11,7 +7,7 @@ import (
 func main() {
   first, second := "first", "second"
   fmt.Println(first,":", second)
-  // swapping 
-  first, second = second, first
+  // tuple assignment
+  first, second = second, first // swapping
   fmt.Println(first,":", second)
 }

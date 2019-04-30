@@ -20,7 +20,7 @@ func main() {
   var sum1 int = x + y
   fmt.Println(sum1)
 
-  // dynamic declaration
+  // short variable declaration
   a := 5
   b := 6
   sum2 := a + b
