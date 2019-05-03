@@ -30,6 +30,13 @@ func main() {
   fmt.Println(b) //prints 1,5,3
   fmt.Println(c) //prints 1,0,3
 
+  // if an array's element type is comparable
+  // then the array type is comparable too
+  // Array size should be same 
+  array1 := [3]int{1,2,3}
+  array2 := [3]int{1,2,3}
+  fmt.Println("array1 == array2:",array1 == array2)
+
   var identityMatrix [3][3]int = [3][3]int{ [3]int{1,0,0}, [3]int{0,1,0}, [3]int{0,0,1} }
   fmt.Println(identityMatrix)
 }
