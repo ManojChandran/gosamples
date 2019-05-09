@@ -10,3 +10,8 @@ func main() {
 	defer fmt.Println("world") // prints first
 	fmt.Println("hello")
 }
+/*
+  Invoke a function and defer its operation in point
+  in time.
+  defer function execute LIFO order
+*/
