@@ -1,3 +1,4 @@
+// package creation
 package main
 
 import (
@@ -22,3 +23,8 @@ func main()  {
             f, tempconv.FToC(f), c, tempconv.CToF(c))
   }
 }
+
+/*
+  Two packages can't cross import each other
+  imports are one way street.
+*/
