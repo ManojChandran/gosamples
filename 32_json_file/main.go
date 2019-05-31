@@ -3,16 +3,25 @@
 package main
 
 import (
+  "encoding/json"
   "fmt"
+  "os"
 )
 
-type Movie struct {
-  Title string
-  Year int `json:"released"`
-  Color bool `json:"color, omitempty"`
-  Actors []string
+type configuration struct {
+  Enabled bool
+  Path string
 }
 
 func main() {
-  fmt.Println("hello")
+  file,_ := os.Open("conf.json")
+  defer file.Close()
+
+  decoder := json.NewDecoder(file)
+  conf := configuration{}
+  err := decoder.Decode(&conf)
+  if err != nil {
+    fmt.Println("Error ",err)
+  }
+  fmt.Println(conf.Path)
 }
