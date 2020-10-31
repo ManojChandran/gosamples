@@ -1,4 +1,4 @@
-# go examples
+# Golang examples
 
 Repository for basic go example programs.
 
