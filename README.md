@@ -5,9 +5,9 @@ Repository for basic go example programs.
 # GO HELP
 
 If you’re ever stuck without internet access, you can get the documentation running locally
-via: 
-godoc -http=:6060 </br>
-and
+via: </br>
+godoc -http=:6060 
+and </br>
 pointing your browser to 
 http://localhost:6060
 
