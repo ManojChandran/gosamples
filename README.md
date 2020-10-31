@@ -10,7 +10,7 @@ and
 pointing your browser to http://localhost:6060
 
 # GO Commands
-
+```
  $ go version               print GO version
  $ go env                   print GO environment variables set
  $ go run main.go           runs the main.go code and shows the result
@@ -21,7 +21,7 @@ pointing your browser to http://localhost:6060
  $ go get                   download and install packages and dependencies
  $ go clean                 removes object files in directory
  $ go doc                   show documentations for package or symbol
-
+```
  # go install / go build
   - Both will compile the package in current directory
   - Install put binaries in the GOPATH/bin
